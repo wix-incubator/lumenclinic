@@ -4,14 +4,17 @@ import { BUSINESS_NAME } from '../utils/constants';
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="py-10 px-4 bg-white border-t border-primary/10">
-  <div class="max-w-7xl mx-auto flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+<footer class="py-12 px-4 bg-white border-t border-primary/10">
+  <div class="max-w-7xl mx-auto grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
     <div>
       <p class="text-sm font-semibold text-primary">{BUSINESS_NAME}</p>
-      <p class="mt-1 text-sm text-muted-foreground">Service scheduling with Wix Headless availability and confirmations.</p>
+      <p class="mt-2 max-w-xl text-sm leading-6 text-muted-foreground">Service scheduling with Wix Headless availability, care-path selection, patient details, and confirmations that are easy to review.</p>
     </div>
-    <p class="text-sm text-muted-foreground">
-      &copy; {currentYear} {BUSINESS_NAME}. Thoughtful care, clearly booked.
-    </p>
+    <div class="flex flex-col gap-2 text-sm text-muted-foreground sm:items-end">
+      <a class="font-semibold text-primary transition-colors hover:text-accent" href="/schedule">Schedule care</a>
+      <p>&copy; {currentYear} {BUSINESS_NAME}. Powered by Wix Headless.</p>
+      <a class="font-semibold text-primary transition-colors hover:text-accent" href="https://www.wix-headless.dev" target="_blank" rel="noreferrer">Built with wix-headless.dev</a>
+      <a class="font-semibold text-primary transition-colors hover:text-accent" href="https://github.com/wix-incubator/lumenclinic" target="_blank" rel="noreferrer">View source on GitHub</a>
+    </div>
   </div>
 </footer>

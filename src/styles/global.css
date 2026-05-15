@@ -237,11 +237,92 @@
     background: hsl(38 88% 58%);
   }
 
+  .lumen-dot.is-muted {
+    background: hsl(202 12% 42%);
+  }
+
   .lumen-note {
     border-radius: 0.5rem;
     background: hsl(156 50% 91%);
     padding: 1rem;
     line-height: 1.6;
+  }
+
+  .lumen-assurance {
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(25 104 123 / 0.1);
+    background: rgb(255 255 255 / 0.78);
+    padding: 0.85rem;
+    box-shadow: 0 10px 28px rgb(25 104 123 / 0.06);
+  }
+
+  .lumen-assurance span {
+    width: 0.55rem;
+    height: 0.55rem;
+    flex: 0 0 auto;
+    border-radius: 999px;
+    background: hsl(38 88% 58%);
+  }
+
+  .lumen-assurance strong {
+    color: hsl(208 28% 17%);
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .lumen-path-card {
+    border: 1px solid rgb(25 104 123 / 0.1);
+    border-radius: 0.5rem;
+    background:
+      linear-gradient(180deg, white, rgb(244 250 248 / 0.92));
+    padding: 1.4rem;
+    box-shadow: 0 16px 42px rgb(25 104 123 / 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .lumen-path-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 22px 54px rgb(25 104 123 / 0.1);
+  }
+
+  .lumen-path-card p {
+    color: hsl(190 55% 31%);
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .lumen-path-card h3 {
+    margin-top: 1.25rem;
+    color: hsl(208 28% 17%);
+    font-size: 1.18rem;
+    font-weight: 700;
+  }
+
+  .lumen-path-card span {
+    display: block;
+    margin-top: 0.55rem;
+    color: hsl(202 12% 42%);
+    font-size: 0.94rem;
+    line-height: 1.6;
+  }
+
+  .lumen-capability-section {
+    background:
+      linear-gradient(180deg, rgb(244 250 248), rgb(255 255 255)),
+      repeating-linear-gradient(90deg, rgb(25 104 123 / 0.06) 0 1px, transparent 1px 72px);
+  }
+
+  .lumen-feature-card {
+    border: 1px solid rgb(25 104 123 / 0.1);
+    border-radius: 0.5rem;
+    background: rgb(255 255 255 / 0.82);
+    padding: 1.5rem;
+    box-shadow: 0 18px 48px rgb(25 104 123 / 0.07);
   }
 
   .lumen-schedule-header {
@@ -252,6 +333,90 @@
     background: linear-gradient(135deg, white, hsl(156 50% 91%));
     padding: clamp(1.5rem, 4vw, 3rem);
     box-shadow: 0 20px 60px rgb(25 104 123 / 0.1);
+  }
+
+  .lumen-schedule-note {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(25 104 123 / 0.1);
+    background: rgb(255 255 255 / 0.7);
+    padding: 0.85rem 1rem;
+    color: hsl(202 12% 42%);
+    font-size: 0.85rem;
+  }
+
+  .lumen-schedule-note span {
+    width: 0.65rem;
+    height: 0.65rem;
+    flex: 0 0 auto;
+    border-radius: 999px;
+    background: hsl(38 88% 58%);
+    box-shadow: 0 0 0 0.35rem rgb(245 183 72 / 0.16);
+  }
+
+  .lumen-step-card {
+    border: 1px solid rgb(25 104 123 / 0.1);
+    border-radius: 0.5rem;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 14px 34px rgb(25 104 123 / 0.07);
+  }
+
+  .lumen-step-card p {
+    color: hsl(190 55% 31%);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .lumen-step-card strong {
+    display: block;
+    margin-top: 0.35rem;
+    color: hsl(208 28% 17%);
+    font-weight: 700;
+  }
+
+  .lumen-step-card span {
+    display: block;
+    margin-top: 0.35rem;
+    color: hsl(202 12% 42%);
+    font-size: 0.86rem;
+    line-height: 1.4;
+  }
+
+  .lumen-scheduler-grid > div {
+    min-width: 0;
+  }
+
+  .lumen-confirm-hero {
+    background:
+      linear-gradient(135deg, hsl(156 50% 91%), rgb(255 255 255)),
+      linear-gradient(90deg, rgb(25 104 123 / 0.08) 0 1px, transparent 1px 100%);
+    background-size: auto, 52px 52px;
+  }
+
+  .lumen-confirm-row {
+    display: grid;
+    gap: 0.35rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(25 104 123 / 0.1);
+    background: rgb(244 250 248 / 0.78);
+    padding: 0.9rem 1rem;
+  }
+
+  .lumen-confirm-row span {
+    color: hsl(190 55% 31%);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .lumen-confirm-row strong {
+    color: hsl(208 28% 17%);
+    font-weight: 700;
+    overflow-wrap: anywhere;
   }
 
   @media (min-width: 768px) {

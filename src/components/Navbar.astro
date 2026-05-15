@@ -2,7 +2,7 @@
 import { BUSINESS_NAME } from '../utils/constants';
 ---
 
-<header class="fixed top-0 left-0 w-full backdrop-blur-md bg-white/90 z-50 border-b border-primary/10">
+<header class="fixed top-0 left-0 w-full backdrop-blur-md bg-white/92 z-50 border-b border-primary/10">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
       <div class="flex items-center">
@@ -10,12 +10,13 @@ import { BUSINESS_NAME } from '../utils/constants';
           <span class="grid h-9 w-9 place-items-center rounded-lg bg-secondary text-primary ring-1 ring-primary/10">
             <span class="h-4 w-4 rounded-full border-4 border-primary"></span>
           </span>
-          <span class="text-lg font-semibold text-primary">{BUSINESS_NAME}</span>
+          <span class="hidden text-lg font-semibold text-primary sm:inline">{BUSINESS_NAME}</span>
+          <span class="text-lg font-semibold text-primary sm:hidden">Lumen</span>
         </a>
       </div>
       <nav class="flex items-center gap-1">
         <a href="/" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-primary transition-colors">Home</a>
-        <a href="/schedule" class="px-3 py-2 text-sm font-medium text-primary bg-secondary rounded-lg hover:bg-primary hover:text-white transition-colors">Book a Visit</a>
+        <a href="/schedule" class="px-3 py-2 text-sm font-semibold text-primary bg-secondary rounded-lg hover:bg-primary hover:text-white transition-colors">Book a Visit</a>
       </nav>
     </div>
   </div>
