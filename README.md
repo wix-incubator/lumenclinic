@@ -1,33 +1,53 @@
 # Lumen Clinic
 
-A calm clinical booking experience showing service selection, live appointment openings, patient details, and confirmations powered by Wix Headless.
+Lumen Clinic is a calm healthcare appointment experience for service selection, appointment availability, patient details, booking creation, and confirmations.
 
 This website is powered by Wix Headless and built using [wix-headless.dev](https://www.wix-headless.dev).
 
-## Live Site
+## Links
 
-- [https://lumen-clin-861ded42-gonenj.wix-site-host.com](https://lumen-clin-861ded42-gonenj.wix-site-host.com)
-
-## Source
-
-- [https://github.com/wix-incubator/lumenclinic](https://github.com/wix-incubator/lumenclinic)
+- Live site: [https://lumen-clin-861ded42-gonenj.wix-site-host.com](https://lumen-clin-861ded42-gonenj.wix-site-host.com)
+- Source: [https://github.com/wix-incubator/lumenclinic](https://github.com/wix-incubator/lumenclinic)
+- Wix site ID: `3b04ea7a-cf6a-4de7-9d0a-312052a0f2ce`
 
 ## What It Showcases
 
-- Bookings experience built as a custom headless website
-- Wix-managed backend capabilities surfaced through a custom Astro front end
-- Public `llms.txt` and `robots.txt` configured through the Wix SEO txt APIs
-- Deployment with `wix release`
+- A custom Astro appointment journey backed by Wix Bookings.
+- Service discovery, availability lookup, and appointment slot selection.
+- Patient information capture and booking creation.
+- Paid or premium appointment handoff through Wix eCommerce checkout.
+- Redirect handling for checkout and confirmation flows.
+- Public `robots.txt` and `llms.txt` configured through Wix SEO txt APIs.
+- Deployment with `wix release`.
+
+## Wix Solutions Used
+
+- Wix Headless Site for the managed site/runtime foundation.
+- Wix Bookings for services, availability, and appointment booking.
+- Wix eCommerce for paid appointment checkout.
+- Wix Redirects for checkout/confirmation redirects.
+
+## Wix SDKs And Packages
+
+- `@wix/astro`
+- `@wix/astro-pages`
+- `@wix/sdk`
+- `@wix/bookings`
+- `@wix/ecom`
+- `@wix/redirects`
 
 ## Local Development
 
+Create a local env file from `.env.example` or run the Wix CLI env setup for the connected site.
+
 ```bash
-yarn install
-yarn dev
+npm install
+npm run dev
 ```
 
-## Build
+## Build And Release
 
 ```bash
-yarn build
+npm run build
+npm run release
 ```
